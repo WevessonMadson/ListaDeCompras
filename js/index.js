@@ -62,7 +62,7 @@ function selectContent() {
     curElement.select();
 }
 
-function gerarLista() {    
+async function gerarLista() {    
     const dataLista = JSON.parse(localStorage.getItem("lastList"));
 
     let lista = "";
@@ -74,7 +74,7 @@ function gerarLista() {
         }
     });
 
-    window.navigator.clipboard.writeText(lista);
+    await window.navigator.clipboard.writeText(lista);
 
     alert("Copiado para a area de transferencia");
 };
