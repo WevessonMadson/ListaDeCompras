@@ -17,10 +17,12 @@ body {
     align-items: center;
     gap: 15px;
     margin-top: 15px;
+    padding-bottom: 10px;
 }
 
 #produtos {
-    min-width: 330px;
+    width: 98vw;
+    border: 1px solid rgba(128, 151, 144, 0.678);
 }
 
 #produtos tbody tr:nth-child(odd) {
@@ -36,4 +38,14 @@ body {
     background-color: transparent;
     border: none;
     text-align: center;
+    width: 120px;
+}
+
+#btnGerarLista {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: rgba(128, 151, 144, 0.678);
+    margin-top: 10px;
 }
